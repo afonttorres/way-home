@@ -20,8 +20,6 @@ export const DetailCard = ({ housing }) => {
         if(end) card.classList.toggle('card-bottom');
     }
 
-    console.log(start)
-
     return (
         <article className='detailCard'  onTouchStart={(e)=>setStart(e.changedTouches[0].clientY)} onTouchEnd={closeDetail}>
 

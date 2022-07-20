@@ -12,9 +12,22 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.dotSlider-pos{
+    display: none;
+}
+
+
 @media (min-width: 820px) {
     .wrapper{
         background-size: contain;
         background-position-x: calc(50% + 35%);
+    }
+    .dotSlider-pos{
+        display: block;
+        position: absolute;
+        bottom: 10vh;
+        right: 15vw;
+        height: 4vh;
+        width: 25vw;
     }
 }
