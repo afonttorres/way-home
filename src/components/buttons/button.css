@@ -1,0 +1,12 @@
+.main-button{
+    height: var(--btn-height);
+    width: var(--btn-width);
+    border-radius: var(--small-border-radius);
+    font-size: var(--detail-font-size);
+    font-weight: 500;
+    color: white;
+    background-color: var(--main-color-opacity);
+    outline: none;
+    box-shadow: none;
+    border: none;
+}

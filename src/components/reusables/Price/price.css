@@ -1,0 +1,9 @@
+.price-text{
+    font-size: var(--title-font-size);
+    color: var(--main-color);
+}
+.currency-text{
+    font-size: var(--main-font-size);
+    color: var(--main-color);
+    font-weight: bold;
+}

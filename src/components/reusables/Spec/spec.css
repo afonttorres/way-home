@@ -1,0 +1,12 @@
+.spec-cont{
+    border-radius: var(--main-border-radius);
+    background-color: var(--white-bg);
+    height: var(--spec-height);
+    width: var(--spec-width);
+    box-shadow: var(--shadow);
+}
+
+.spec-text{
+    color: var(--title-color);
+    font-weight: bolder;
+}

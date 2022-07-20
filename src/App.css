@@ -2,17 +2,21 @@
   /* FONTS */
   --font-family-title: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-family-main: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  --font-size: small;
+  --title-font-size: xx-large;
+  --main-font-size: x-large;
+  --detail-font-size: medium;
 
   /* COLORS */
   --title-color: black;
   --main-color: rgba(11, 201, 209, 1);
-  --main-color-opacity: rgba(234, 247, 248, 1);
+  --main-color-opacity: rgb(80, 163, 169);
   --red: rgba(251, 115, 115, 1);
   --red-opacity: rgba(241, 232, 235, 1);
-  --main-bg: rgba(249, 251, 253, 1);
-  --blue: rgba(193, 212, 246, 1);
-  --blue-opacity: rgba(242, 246, 253,1);
+  --main-bg: white;
+  --contrast-bg: rgb(205, 252, 255);
+  --white-bg: white;
+  --blue: rgb(42, 107, 219);
+  --blue-opacity: rgba(42, 107, 219, .4);
   --detail-color: rgba(204, 199, 199, 1);
 
 
@@ -24,13 +28,17 @@
   --nav-btn-cont-height: 5vh;
   --nav-btn-cont-width: 5vh;
 
-  --btn-width: 25vw;
-  --btn-height: 4vh;
+  --btn-height: 2.5rem;
+  --btn-width: 8rem;
+
+  --category-btn-height: 2rem;
+  --category-btn-width: fit-content;
 
   --input-height: 4vh;
   --input-width: 85vw;
-  --specs-height: 5em;
-  --specs-width: 5em;
+
+  --spec-height: 5em;
+  --spec-width: 5em;
 
   --main-card-heightMB: 10rem;
   --main-card-widthMB: 10rem;
@@ -42,14 +50,20 @@
   --small-card-heightDT: 10rem;
   --small-card-widthDT: 10rem;
 
+  --detail-card-height: 60vh;
+
   --xfeed-height: 50vh;
   --yfeed-height: 30vh;
 
   --icon-size: 1.5rem;
 
   /* BORDERS */
-  --main-border-radius: 1rem;
+  --main-border-radius: 1.5rem;
+  --cards-border-radius: 3rem;
   --small-border-radius: .75rem;
+
+  /*SHADOW*/
+  --shadow: 3px 2px 12px lightgrey;
 
 }
 
@@ -73,5 +87,52 @@ html {
   position: fixed;
   position: fixed;
   overflow: hidden;
-  border: 1px solid black;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.main-title {
+  font-size: var(--title-font-size);
+  color: var(--title-color);
+  font-family: var(--font-family-title);
+  font-weight: 900;
+}
+
+.title {
+  font-size: var(--main-font-size);
+  color: var(--title-color);
+  font-family: var(--font-family-title);
+  font-weight: 900;
+}
+
+.detail-text {
+  font-size: var(--detail-font-size);
+  color: var(--detail-color);
+  font-family: var(--font-family-title);
+}
+
+.main-title::first-letter,
+.title::first-letter,
+.detail-font::first-letter {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }

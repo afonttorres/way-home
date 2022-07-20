@@ -1,9 +1,94 @@
-article.detailCard{
+.detailCard {
     bottom: 0;
     left: 0;
     width: 100%;
     position: absolute;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: var(--main-bg);
+    height: var(--detail-card-height);
+    border-radius: var(--cards-border-radius) var(--cards-border-radius) 0 0;
+    gap: 2%;
+}
+
+.detailCard .scroll-bar{
+    height: .5rem;
+    width: 5rem;
+    border-radius: .25rem;
+    background-color: var(--detail-color);
+    margin: calc((5vh - .5rem) / 2)
+}
+
+.detailCard-header {
+    height: 30%;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.detailCard-header .title-cont {
+    align-items: self-start;
+    justify-content: space-evenly;
+}
+
+.detailCard-specs,
+.detailCard-desc {
+    height: 25%;
+    width: 85%;
+    margin: 0 auto;
+}
+.detailCard-desc{
+    height: 20%;
+}
+.detailCard-specs .specs-titles, .detailCard-desc .desc-title, .detailCard-header .category-cont {
+    justify-content: space-between;
+    height: 60%;
+}
+.specs-cards{
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+.detailCard-desc{
+   align-items: flex-start;
+}
+.desc-content{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.detailCard-footer {
+    height: 25%;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.price-cont{
+    height: 70%;
+    width: 85%;
+    border-radius: var(--main-border-radius);
+    background-color: var(--white-bg);
+    justify-content: space-evenly;
+    box-shadow: var(--shadow)
+}
+
+@media (min-width: 820px) {
+    .detailCard {
+       position: absolute;
+       top: 15vh;
+       left: calc((100% - 35%) /2 );
+       left: 5vw;
+       width: 35%;
+       margin: auto;
+       border-radius: var(--main-border-radius);
+       box-shadow: var(--shadow);
+    }
+
+    .scroll-bar{
+        display: none;
+    }
 }

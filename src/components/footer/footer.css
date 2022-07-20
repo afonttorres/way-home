@@ -1,4 +1,4 @@
-footer{
+#footer{
     position: fixed;
     bottom: 0;
     left: 0;
@@ -13,14 +13,14 @@ footer{
     align-items: center;
 }
 
-footer i{
+#footer i{
     font-size: var(--icon-size);
     color: var(--detail-color);
     
 }
 
 @media (min-width: 820px) {
-    footer {
+    #footer {
         display: none;
     }
 }

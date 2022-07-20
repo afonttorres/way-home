@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
-import { Nav } from '../../components/nav/Nav';
-import { Footer } from '../../components/footer/Footer';
 import { VDetail } from '../../views/VDetail/VDetail';
 import { housingService } from '../../services/housingService';
 
@@ -27,7 +25,6 @@ export const Detail = () => {
     return (
         <>
             {housing ? <VDetail housing={housing} /> : null}
-            <Footer />
         </>
     )
 }

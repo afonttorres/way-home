@@ -1,8 +1,7 @@
-nav {
+#nav {
     position: fixed;
     top: 0;
     left: 0;
-    border: 1px solid black;
     height: var(--nav-height);
     width: 100%;
     display: flex;
@@ -21,7 +20,8 @@ nav {
     align-items: center;
     justify-content: center;
     border-radius: var(--main-border-radius);
-    border: 3px solid var(--main-color-opacity);
+    border: 5px solid var(--main-color-opacity);
+    background-color: var(--main-bg);
 }
 
 .btnMB i {
@@ -29,8 +29,35 @@ nav {
     color: var(--main-color)
 }
 
+.nav-contentDT {
+    display: none;
+}
+
 @media (min-width: 820px) {
-    nav {
+    #nav {
         background-color: var(--main-bg);
+        justify-content: flex-end;
+    }
+
+    .btnMB {
+        display: none;
+    }
+
+    .nav-contentDT {
+        display: flex;
+        height: 100%;
+        width: 50%;
+        justify-content: space-around;
+    }
+
+    .nav-itemDT {
+        color: var(--title-color);
+        font-family: var(--font-family-main);
+        font-size: var(--main-font-size);
+        cursor: pointer;
+    }
+
+    .nav-itemDT:hover {
+        color: var(--main-color);
     }
 }

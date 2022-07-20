@@ -1,0 +1,19 @@
+.detailView {
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--contrast-bg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media (min-width: 820px) {
+    .wrapper{
+        background-position-x: calc(50% + 35%);
+    }
+}
