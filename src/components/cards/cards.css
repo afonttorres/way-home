@@ -84,7 +84,7 @@
 
 @media (min-width: 820px) {
     .detailCard {
-       position: absolute;
+       position: fixed;
        top: 15vh;
        left: calc((100% - 35%) /2 );
        left: 5vw;

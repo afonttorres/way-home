@@ -56,7 +56,6 @@ export const VDetail = ({ housing }) => {
     }
 
     const slideOnClick = (index) =>{
-        console.log(index);
         setImg(imgs[index]);
         setCurrent(index);
     }
