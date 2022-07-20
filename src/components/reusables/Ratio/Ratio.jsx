@@ -23,7 +23,6 @@ export const Ratio = ({ ratio }) => {
         setEmpty(voids);
     }
 
-    console.log(empty)
     return (
         <div className="ratio-cont">
             {values ?

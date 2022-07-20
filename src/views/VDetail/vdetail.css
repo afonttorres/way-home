@@ -9,11 +9,12 @@
     height: 100%;
     width: 100%;
     background-color: var(--contrast-bg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 @media (min-width: 820px) {
     .wrapper{
+        background-size: contain;
         background-position-x: calc(50% + 35%);
     }
 }

@@ -17,7 +17,6 @@ export const Detail = () => {
     const getData = () => {
         housingService.getSingleHousing(id).then(res => {
             if (!res) return;
-            console.log(res);
             setHousing(res);
         })
     }

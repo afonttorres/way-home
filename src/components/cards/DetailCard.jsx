@@ -4,13 +4,26 @@ import { Category } from '../reusables/Category/Category';
 import { Price } from '../reusables/Price/Price';
 import { Spec } from '../reusables/Spec/Spec';
 import { Ratio } from '../reusables/Ratio/Ratio';
+import { useEffect, useState } from 'react';
 
 export const DetailCard = ({ housing }) => {
 
-    
+    const [start, setStart] = useState();
+
+    useEffect(()=>{
+
+    },[start])
+
+    const closeDetail = (e) =>{
+        let end = e.changedTouches[0].clientY;
+        let card = document.querySelector('.detailCard');
+        if(end) card.classList.toggle('card-bottom');
+    }
+
+    console.log(start)
 
     return (
-        <article className='detailCard'>
+        <article className='detailCard'  onTouchStart={(e)=>setStart(e.changedTouches[0].clientY)} onTouchEnd={closeDetail}>
 
             <div className="scroll-bar"></div>
 

@@ -10,6 +10,7 @@
     background-color: var(--main-bg);
     height: var(--detail-card-height);
     border-radius: var(--cards-border-radius) var(--cards-border-radius) 0 0;
+    transition: bottom 1s ease;
     gap: 2%;
 }
 
@@ -76,6 +77,11 @@
     box-shadow: var(--shadow)
 }
 
+.card-bottom{
+    bottom: -45vh;
+    transition: bottom 1s ease;
+}
+
 @media (min-width: 820px) {
     .detailCard {
        position: absolute;
@@ -86,6 +92,7 @@
        margin: auto;
        border-radius: var(--main-border-radius);
        box-shadow: var(--shadow);
+       bottom: 15vh !important;
     }
 
     .scroll-bar{
