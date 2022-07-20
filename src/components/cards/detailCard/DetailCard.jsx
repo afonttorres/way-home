@@ -5,6 +5,7 @@ import { Price } from '../../reusables/Price/Price';
 import { Spec } from '../../reusables/Spec/Spec';
 import { Ratio } from '../../reusables/Ratio/Ratio';
 import { useEffect, useState } from 'react';
+import { TitleDisplay } from '../../reusables/TitleDisplay/TitleDisplay';
 
 export const DetailCard = ({ housing }) => {
 
@@ -31,10 +32,7 @@ export const DetailCard = ({ housing }) => {
                     <Ratio ratio={housing.ratio}/>
                 </div>
                 <div className="row">
-                    <div className="col title-cont">
-                        <span className='main-title'> {housing.title}</span>
-                        <span className='detail-text capitalize'><i className="fa-solid fa-location-dot"></i>&nbsp;&nbsp;{housing.location}</span>
-                    </div>
+                    <TitleDisplay housing={housing} />
                 </div>
             </header>
 

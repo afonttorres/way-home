@@ -31,7 +31,7 @@ export const VDetail = ({ housing }) => {
         if (!imgs) return
         let index = imgs.indexOf(img);
         setCurrent(index);
-    }, [imgs])
+    }, [imgs, img])
 
     useEffect(() => {
     }, [img, current])

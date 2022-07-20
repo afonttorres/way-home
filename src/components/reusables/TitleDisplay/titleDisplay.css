@@ -1,0 +1,5 @@
+.titleDisplay-cont {
+    align-items: self-start;
+    justify-content: space-evenly;
+    gap: 10%;
+}

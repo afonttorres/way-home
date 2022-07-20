@@ -1,5 +1,4 @@
 import * as React from 'react';
-import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { App } from '../App';
 import { MainButton } from '../components/buttons/MainButton';

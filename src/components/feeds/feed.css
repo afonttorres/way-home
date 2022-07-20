@@ -1,17 +1,20 @@
-div.xfeed{
+.xfeed, .yfeed{
     height: var(--xfeed-height);
-    width: 85%;
+    width: 75%;
     margin: 0 auto;
     position: relative;
     top: calc(var(--nav-height) + 2vh);
-    border: 1px solid black;
+    overflow: scroll;
 }
 
-div.yfeed{
+.xfeed{
+    display:-webkit-box;
+    padding: 0 5% 0 5%;
+    gap: 5%;
+}
+
+.yfeed{
     height: var(--yfeed-height);
-    top: 15%;
     width: 85%;
-    margin: 0 auto;
-    position: relative;
-    border: 1px solid black;
+    top: 15%;
 }

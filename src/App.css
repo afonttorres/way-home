@@ -2,8 +2,8 @@
   /* FONTS */
   --font-family-title: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-family-main: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  --title-font-size: xx-large;
-  --main-font-size: x-large;
+  --title-font-size: x-large;
+  --main-font-size: large;
   --detail-font-size: medium;
 
   /* COLORS */
@@ -16,7 +16,7 @@
   --main-bg: white;
   --contrast-bg: rgb(205, 252, 255);
   --white-bg: white;
-  --blue: rgb(42, 107, 219);
+  --blue: rgb(61, 100, 167);
   --blue-opacity: rgba(42, 107, 219, .4);
   --detail-color: rgba(204, 199, 199, 1);
 
@@ -41,10 +41,10 @@
   --spec-height: 5em;
   --spec-width: 5em;
 
-  --main-card-heightMB: 10rem;
-  --main-card-widthMB: 10rem;
-  --main-card-heightDT: 10rem;
-  --main-card-widthDT: 10rem;
+  --main-card-heightMB: 25rem;
+  --main-card-widthMB: 17rem;
+  --main-card-heightDT: 25rem;
+  --main-card-widthDT: 20rem;
 
   --small-card-heightMB: 10rem;
   --small-card-widthMB: 10rem;
@@ -53,7 +53,7 @@
 
   --detail-card-height: 60vh;
 
-  --xfeed-height: 50vh;
+  --xfeed-height: 40vh;
   --yfeed-height: 30vh;
 
   --icon-size: 1.5rem;
@@ -79,6 +79,10 @@ html {
 a{
   display: contents;
   color: inherit;
+}
+
+p{
+  margin: 0;
 }
 
 .view {
