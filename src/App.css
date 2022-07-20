@@ -9,7 +9,8 @@
   /* COLORS */
   --title-color: black;
   --main-color: rgba(11, 201, 209, 1);
-  --main-color-opacity: rgb(80, 163, 169);
+  --main-color-opacity: rgba(80, 163, 169, 50%);
+  --main-color-btn: rgba(80, 163, 169, 1);
   --red: rgba(251, 115, 115, 1);
   --red-opacity: rgba(241, 232, 235, 1);
   --main-bg: white;
@@ -73,6 +74,11 @@ html {
   padding: 0;
   height: 100%;
   width: 100%;
+}
+
+a{
+  display: contents;
+  color: inherit;
 }
 
 .view {
