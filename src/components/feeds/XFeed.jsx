@@ -1,5 +1,5 @@
 import '../feeds/feed.css';
-import { MainCard } from '../cards/MainCard';
+import { MainCard } from '../cards/mainCard/MainCard';
 export const XFeed = ({ housings }) => {
     return (
         <div className='xfeed'>

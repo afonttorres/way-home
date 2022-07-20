@@ -1,9 +1,9 @@
-import { MainButton } from '../buttons/MainButton';
-import '../cards/cards.css';
-import { Category } from '../reusables/Category/Category';
-import { Price } from '../reusables/Price/Price';
-import { Spec } from '../reusables/Spec/Spec';
-import { Ratio } from '../reusables/Ratio/Ratio';
+import '../detailCard/detailCard.css';
+import { MainButton } from '../../buttons/MainButton';
+import { Category } from '../../reusables/Category/Category';
+import { Price } from '../../reusables/Price/Price';
+import { Spec } from '../../reusables/Spec/Spec';
+import { Ratio } from '../../reusables/Ratio/Ratio';
 import { useEffect, useState } from 'react';
 
 export const DetailCard = ({ housing }) => {
@@ -46,7 +46,7 @@ export const DetailCard = ({ housing }) => {
                 </div>
                 <div className="specs-cards row">
                     {housing.specs.map((s, key) => (
-                        <Spec specification={s}/>
+                        <Spec key={key} specification={s}/>
                     ))}
                 </div>
             </section>

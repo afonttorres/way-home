@@ -78,7 +78,7 @@
 }
 
 .card-bottom{
-    bottom: -45vh;
+    bottom: -38vh;
     transition: bottom 1s ease;
 }
 
@@ -99,3 +99,4 @@
         display: none;
     }
 }
+

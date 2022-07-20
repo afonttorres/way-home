@@ -1,5 +1,5 @@
 import '../feeds/feed.css';
-import { SmallCard } from '../cards/SmallCard';
+import { SmallCard } from '../cards/smallCard/SmallCard';
 export const YFeed = ({ housings }) => {
     return (
         <div className='yfeed'>

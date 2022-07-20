@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { DetailCard } from "../../components/cards/DetailCard";
+import { DetailCard } from "../../components/cards/detailCard/DetailCard";
 import { Nav } from "../../components/nav/Nav";
 import { DotSlider } from "../../components/reusables/DotSlider/DotSlider";
 import '../VDetail/vdetail.css';
