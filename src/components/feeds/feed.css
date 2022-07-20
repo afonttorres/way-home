@@ -1,20 +1,38 @@
+.xfeed-cont, .yfeed-cont{
+    position: relative;
+    top: var(--nav-height);
+    gap: 3%;
+    height: fit-content;
+}
+
+.feed-title{
+    margin: 1.5%;
+    align-self: flex-start;
+    margin-left: 15%;
+}
+
 .xfeed, .yfeed{
     height: var(--xfeed-height);
     width: 75%;
     margin: 0 auto;
     position: relative;
-    top: calc(var(--nav-height) + 2vh);
-    overflow: scroll;
 }
 
 .xfeed{
     display:-webkit-box;
     padding: 0 5% 0 5%;
     gap: 5%;
+    overflow-x: scroll;
 }
-
+.yfeed-cont{
+    top: 12.5%;
+}
 .yfeed{
+    margin-top: 5%;
     height: var(--yfeed-height);
     width: 85%;
-    top: 15%;
+    gap: 5%;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
 }

@@ -1,0 +1,24 @@
+.smallCard-cont{
+    height: var(--small-card-heightMB);
+    width: var(--small-card-widthMB);
+    box-shadow: var(--shadow);
+    border-radius: var(--main-border-radius);
+}
+.smallCard-img-cont{
+    height: 85%;
+    width: 85%;
+}
+.smallCard-img-cont img{
+    height: 95%;
+    width: 70%;
+    margin: auto;
+    border-radius: var(--main-border-radius);
+}
+
+.smallCard-info-cont{
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5%;
+    height: 90%;
+    margin: auto;
+}

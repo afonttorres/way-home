@@ -6,6 +6,7 @@ import { Spec } from '../../reusables/Spec/Spec';
 import { Ratio } from '../../reusables/Ratio/Ratio';
 import { useEffect, useState } from 'react';
 import { TitleDisplay } from '../../reusables/TitleDisplay/TitleDisplay';
+import { SeeAll } from '../../reusables/SeeAll/SeeAll';
 
 export const DetailCard = ({ housing }) => {
 
@@ -38,10 +39,11 @@ export const DetailCard = ({ housing }) => {
 
 
             <section className='detailCard-specs col'>
-                <div className="specs-titles row">
+                {/* <div className="specs-titles row">
                     <span className='title'>facilities</span>
                     <span className='detail-text capitalize' style={{color:'var(--main-color)'}}>see all</span>
-                </div>
+                </div> */}
+                <SeeAll title={'facilities'} goTo={'/facilities'}/>
                 <div className="specs-cards row">
                     {housing.specs.map((s, key) => (
                         <Spec key={key} specification={s}/>

@@ -6,11 +6,11 @@
     width: 100%;
     background-color: var(--main-bg);
     border-radius: 3rem 3rem 0 0;
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: var(--shadow);
 }
 
 #footer i{

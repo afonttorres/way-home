@@ -13,7 +13,6 @@
 }
 
 .btnMB {
-    border: 1px solid black;
     height: var(--nav-btn-cont-height);
     width: var(--nav-btn-cont-width);
     display: flex;
