@@ -1,0 +1,17 @@
+div.xfeed{
+    height: var(--xfeed-height);
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    top: calc(var(--nav-height) + 2vh);
+    border: 1px solid black;
+}
+
+div.yfeed{
+    height: var(--yfeed-height);
+    top: 15%;
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid black;
+}

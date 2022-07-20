@@ -38,6 +38,9 @@
   --small-card-heightDT: 10rem;
   --small-card-widthDT: 10rem;
 
+  --xfeed-height: 50vh;
+  --yfeed-height: 30vh;
+
   --icon-size: 1.5rem;
 
   /* BORDERS */
@@ -58,10 +61,13 @@ html {
   height: var(--view-height);
   width: 100%;
   top: 0;
+  left: 0;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-y: scroll;
+  position: fixed;
+  position: fixed;
+  overflow: hidden;
   border: 1px solid black;
 }

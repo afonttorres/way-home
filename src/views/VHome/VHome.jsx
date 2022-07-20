@@ -7,7 +7,7 @@ export const VHome = ({ housings }) => {
         <div className="view">
             <Nav />
             <XFeed housings={housings} /> 
-            <XFeed housings={housings} /> 
+            <YFeed housings={housings} /> 
         </div>
     )
 }
