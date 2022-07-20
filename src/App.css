@@ -5,12 +5,16 @@
   --font-size: small;
 
   /* COLORS */
+  --title-color: black;
   --main-color: rgba(11, 201, 209, 1);
   --main-color-opacity: rgba(234, 247, 248, 1);
-  --ux-color: rgba(251, 115, 115, 1);
-  --ux-color-opacity: rgba(241, 232, 235, 1);
+  --red: rgba(251, 115, 115, 1);
+  --red-opacity: rgba(241, 232, 235, 1);
   --main-bg: rgba(249, 251, 253, 1);
+  --blue: rgba(193, 212, 246, 1);
+  --blue-opacity: rgba(242, 246, 253,1);
   --detail-color: rgba(204, 199, 199, 1);
+
 
   /*SIZES*/
   --nav-height: 10vh;
