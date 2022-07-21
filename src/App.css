@@ -146,3 +146,8 @@ p{
 .capitalize {
   text-transform: capitalize;
 }
+
+::selection{
+  background-color: var(--main-color-opacity);
+  color: white;
+}

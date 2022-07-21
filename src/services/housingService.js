@@ -18,7 +18,7 @@ export const housingService = {
         const suggestions = axios.get(`${baseUrl}/housing`).then(res =>{
             return res.data;
         })
-        return housing;
+        return suggestions;
     }
 
 }
