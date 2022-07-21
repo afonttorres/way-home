@@ -7,6 +7,7 @@ import { Ratio } from '../../reusables/Ratio/Ratio';
 import { useEffect, useState } from 'react';
 import { TitleDisplay } from '../../reusables/TitleDisplay/TitleDisplay';
 import { SeeAll } from '../../reusables/SeeAll/SeeAll';
+import { AnimalDisplay } from '../../reusables/AnimalDisplay/AnimalDisplay';
 
 export const DetailCard = ({ housing }) => {
 
@@ -39,16 +40,13 @@ export const DetailCard = ({ housing }) => {
 
 
             <section className='detailCard-specs col'>
-                {/* <div className="specs-titles row">
-                    <span className='title'>facilities</span>
-                    <span className='detail-text capitalize' style={{color:'var(--main-color)'}}>see all</span>
-                </div> */}
                 <SeeAll title={'facilities'} goTo={'/facilities'}/>
                 <div className="specs-cards row">
                     {housing.specs.map((s, key) => (
                         <Spec key={key} specification={s}/>
                     ))}
                 </div>
+                <AnimalDisplay pet={housing.animal}/>
             </section>
 
             <section className="detailCard-desc col">

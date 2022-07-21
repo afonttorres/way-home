@@ -11,12 +11,12 @@ export const VDetail = ({ housing }) => {
     const [imgs, setImgs] = useState();
     const [current, setCurrent] = useState();
 
-    useEffect(()=>{
-        let s = 3;
-        let ms = s* 1000;
-        let timerID = setInterval(autoSlide, ms);
-        return () => clearInterval(timerID)
-    },[imgs, current, img])
+    // useEffect(()=>{
+    //     let s = 3;
+    //     let ms = s* 1000;
+    //     let timerID = setInterval(autoSlide, ms);
+    //     return () => clearInterval(timerID)
+    // },[imgs, current, img])
 
     useEffect(() => {
         if (!housing) return;

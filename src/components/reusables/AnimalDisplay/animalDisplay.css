@@ -1,0 +1,7 @@
+.animal-cont{
+    font-size: 4rem;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    color: var(--main-color-opacity);
+}
