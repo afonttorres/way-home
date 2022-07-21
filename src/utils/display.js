@@ -18,7 +18,9 @@ export const displayUtil = {
             { worm: <i className="fa-solid fa-worm"></i> }
         ]
 
+        console.log(pet)
         const icon = icons.filter((obj, key)=> Object.keys(obj) == pet)[0];
+        if(!icon) return '';
         return icon[Object.keys(icon)]
     }
 }

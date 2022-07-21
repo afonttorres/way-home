@@ -2,4 +2,6 @@
     align-items: self-start;
     justify-content: space-evenly;
     gap: 10%;
+    width: 85%;
+    margin-right: 15%;
 }

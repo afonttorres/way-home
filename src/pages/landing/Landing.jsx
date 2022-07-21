@@ -11,8 +11,8 @@ export const Landing = () => {
                 height: '50%',
                 gap: '5%'
             }}>
-                <h2 className="main-title landing-title">Find your Perfect Place</h2>
-                <p className="title landing-subtitle">you and your pets</p>
+                <h2 className="main-title landing-title">Home is where your pet is</h2>
+                <p className="title landing-subtitle">Encuentra un hogar para ti y para los tuyos</p>
             </div>
             <div className="col" style={{ height: 'fit-content' }}><LandingButton /></div>
             {/* boton para ir a about us */}

@@ -18,6 +18,11 @@ export const SearchForm = ({ searchData }) => {
         e.preventDefault();
         if(search == '' || search == undefined) return;
         searchData(search.toLocaleLowerCase().trim());
+        resetSearch();
+    }
+
+    const resetSearch = () =>{
+        setSearch('');
     }
 
 

@@ -4,4 +4,5 @@
     top: 20%;
     right: 10%;
     color: var(--main-color-opacity);
+    z-index: 1;
 }
