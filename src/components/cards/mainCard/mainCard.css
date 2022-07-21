@@ -5,6 +5,7 @@
     box-shadow: var(--shadow);
     border-radius: var(--main-border-radius);
     cursor: pointer;
+    position: relative;
 }
 .MainCard-img-cont, .MainCard-info-cont{
     height: 55%;

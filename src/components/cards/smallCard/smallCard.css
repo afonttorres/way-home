@@ -3,6 +3,7 @@
     width: var(--small-card-widthMB);
     box-shadow: var(--shadow);
     border-radius: var(--main-border-radius);
+    position: relative;
 }
 .smallCard-img-cont{
     height: 85%;
