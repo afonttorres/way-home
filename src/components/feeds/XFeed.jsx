@@ -7,7 +7,7 @@ export const XFeed = ({ housings }) => {
             <SeeAll title={'most popular'} goTo={'most-popular'} width={'75%'} />
             <div className='xfeed row'>
                 {housings.map((housing, key) =>
-                    <>{key < 10 ? <MainCard key={housing.id} housing={housing} /> : null}</>
+                    <>{housing.active ? <MainCard key={housing.id} housing={housing} /> : null}</>
                 )}
             </div>
         </div>

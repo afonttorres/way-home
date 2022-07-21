@@ -11,3 +11,8 @@
     font-weight: bolder;
     text-align: center;
 }
+
+.spec-icon{
+    color: var(--main-color-opacity);
+    font-size: var(--title-font-size);
+}

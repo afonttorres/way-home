@@ -9,7 +9,7 @@ export const SearchFeed = ({ suggestions, search }) => {
             {suggestions.length >= 1 ?
 
                 <>{suggestions.map((s, key) => (
-                    <SmallCard key={s.id} housing={s} />
+                    <>{s.active ? <SmallCard key={s.id} housing={s} /> : null}</>
                 ))}</>
 
                 :

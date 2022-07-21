@@ -1,7 +1,6 @@
 .MainCard-cont{
     height: var(--main-card-heightMB);
     width: var(--main-card-widthMB);
-    margin: auto;
     box-shadow: var(--shadow);
     border-radius: var(--main-border-radius);
     cursor: pointer;

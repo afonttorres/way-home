@@ -14,9 +14,11 @@ export const Nav = () => {
                 <Link to='/saved'><i className="fa-solid fa-bookmark"></i></Link>
             </span>
             <div className="nav-contentDT row">
-                <span className="nav-itemDT"><Link to='/home'>Home</Link></span>
-                <span className="nav-itemDT"><Link to='/contact'>Contact</Link></span>
-                <span className="nav-itemDT"><Link to='/profile'>Profile</Link></span>
+                {location.includes('home') ? null : <span className="nav-itemDT"><Link to='/home'>Home</Link></span>}
+                {location.includes('search') ? null :  <span className="nav-itemDT"><Link to='/search'>Search</Link></span>}
+                {location.includes('requests') ? null : <span className="nav-itemDT"><Link to='/requests'>Requests</Link></span>}
+                {location.includes('profile') ? null :  <span className="nav-itemDT"><Link to='/profile'>Profile</Link></span>}
+                {location.includes('about') ? null : <span className="nav-itemDT"><Link to='/about-us'>About Us</Link></span>}                
             </div>
         </nav>
     )

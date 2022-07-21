@@ -39,6 +39,14 @@
 }
 
 .search-feed{
-    height: 65vh;
+    height: 55vh;
     width: 85%;
+    position: absolute;
+    top: calc(var(--nav-height) + 15vh);
+}
+@media (min-width: 820px) {
+    .search-feed{
+        flex-wrap: wrap;
+        width: 70%;
+    }
 }

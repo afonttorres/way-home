@@ -76,12 +76,12 @@ html {
   width: 100%;
 }
 
-a{
+a {
   display: contents;
   color: inherit;
 }
 
-p{
+p {
   margin: 0;
 }
 
@@ -147,7 +147,11 @@ p{
   text-transform: capitalize;
 }
 
-::selection{
+::selection {
   background-color: var(--main-color-opacity);
   color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
