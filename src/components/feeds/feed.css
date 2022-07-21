@@ -52,13 +52,29 @@
     top: calc(var(--nav-height) + 15vh);
 }
 
-.match-feed{
-    top: calc( var(--nav-height) + 2vh);
+.match-feed {
     justify-content: flex-start;
-    border: 1px solid;
     height: 60vh;
     position: relative;
-    height: calc(90vh - var(--nav-height) - 3vh);
+    gap: 5%;
+    top: 10vh;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.user-data {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    height: 15vh;
+    width: 85%;
+    align-items: flex-start;
+    position: fixed;
+    top: var(--nav-height);
+}
+
+.match-title{
+    font-size: 1.75rem;
 }
 
 @media (min-width: 820px) {
@@ -74,5 +90,17 @@
     .xfeed {
         padding: 1% 5% 2% 5%;
         gap: 2%;
+    }
+    .match-feed{
+        flex-flow: wrap;
+        justify-content: flex-start;
+        padding-left: 5%;
+        width: 85%;
+        height: 65vh;
+        top: 12vh;
+    }
+    .user-data{
+        width: 25%;
+        margin-right: calc(85% - 25%);
     }
 }

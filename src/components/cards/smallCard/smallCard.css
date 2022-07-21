@@ -10,11 +10,12 @@
     height: 85%;
     width: 85%;
 }
-.smallCard-img-cont img{
+.smallCard-img-cont > img{
     height: 90px;
     width: 90px;
     margin: auto;
     border-radius: var(--main-border-radius);
+    object-fit: cover;
 }
 
 .smallCard-info-cont{

@@ -13,4 +13,5 @@
     outline: none;
     box-shadow: none;
     border: none;
+    font-size: var(--detail-font-size);
 }

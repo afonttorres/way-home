@@ -3,8 +3,8 @@
   --font-family-title: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-family-main: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --title-font-size: large;
-  --main-font-size: medium
-  --detail-font-size: small;
+  --main-font-size: medium;
+  --detail-font-size: 1.15rem;
 
   /* COLORS */
   --title-color: black;
@@ -145,6 +145,10 @@ p {
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.uncapitalize::first-letter{
+  text-transform: none;
 }
 
 ::selection {

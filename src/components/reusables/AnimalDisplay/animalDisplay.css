@@ -1,8 +1,13 @@
 .animal-cont{
     font-size: 4rem;
     position: absolute;
-    top: 15%;
+    top: 20%;
     right: 10%;
     color: var(--main-color-opacity);
     z-index: 1;
+}
+@media (min-width: 820px) {
+    .animal-cont{
+        top: 15%;
+    }
 }

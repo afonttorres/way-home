@@ -1,0 +1,54 @@
+.matchCard-cont {
+    height: 30vh;
+    width: 85%;
+    border-radius: var(--main-border-radius);
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.matchCard-cont>* {
+    /* border: 1px solid black; */
+}
+
+.matchCard-img-cont,
+.matchCard-info-cont {
+    width: 40%;
+}
+
+.matchCard-h-row,.matchCard-img-row{
+    height: 15vh;
+}
+
+.matchCard-img-cont>img {
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    border-radius: var(--main-border-radius);
+}
+
+.matchCard-sel-info-cont {
+    width: 60%;
+}
+
+.matchCard-user-data{
+    align-items: flex-start;
+    gap: 5%;
+}
+
+.matchCard-h-info-cont {
+    height: 70%;
+    width: 85%;
+    align-items: self-start;
+}
+
+.sol-text{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+@media (min-width: 820px) {
+    .matchCard-cont{
+        width: 30rem;
+    }
+}

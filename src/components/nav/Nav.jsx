@@ -15,10 +15,10 @@ export const Nav = () => {
             </span>
             <div className="nav-contentDT row">
                 {location.includes('home') ? null : <span className="nav-itemDT"><Link to='/home'>Home</Link></span>}
-                {location.includes('search') ? null :  <span className="nav-itemDT"><Link to='/search'>Search</Link></span>}
-                {location.includes('matches') ? null : <span className="nav-itemDT"><Link to='/match'>Matches</Link></span>}
-                {location.includes('profile') ? null :  <span className="nav-itemDT"><Link to='/profile'>Profile</Link></span>}
-                {location.includes('about') ? null : <span className="nav-itemDT"><Link to='/about-us'>About Us</Link></span>}                
+                {location.includes('search') ? null : <span className="nav-itemDT"><Link to='/search'>Search</Link></span>}
+                {location.includes('matches') ? null : <span className="nav-itemDT"><Link to='/matches'>Matches</Link></span>}
+                {location.includes('profile') ? null : <span className="nav-itemDT"><Link to='/profile'>Profile</Link></span>}
+                {location.includes('about') ? null : <span className="nav-itemDT"><Link to='/about-us'>About Us</Link></span>}
             </div>
         </nav>
     )

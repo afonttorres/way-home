@@ -53,7 +53,7 @@
     overflow-y: scroll;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 10%;
+    gap: 9%;
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -87,7 +87,7 @@
 }
 
 .card-bottom{
-    bottom: -38vh;
+    bottom: -40vh;
     transition: bottom 1s ease;
 }
 
@@ -97,7 +97,7 @@
        top: 15vh;
        left: calc((100% - 35%) /2 );
        left: 5vw;
-       width: 40%;
+       width: 35%;
        margin: auto;
        border-radius: var(--main-border-radius);
        box-shadow: var(--shadow);
@@ -105,6 +105,10 @@
        transition: none;
        padding: 1%;
        height: 65%;
+    }
+
+    .specs-cards{
+        gap: 5%;
     }
 
     .scrollBar{

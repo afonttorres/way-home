@@ -8,7 +8,7 @@
 
 .spec-text{
     color: var(--title-color);
-    font-weight: bolder;
+    font-weight: 100;
     text-align: center;
 }
 

@@ -33,8 +33,8 @@ export const DetailCard = ({ housing, specs }) => {
                     <Category category={housing.category} />
                     <Ratio ratio={housing.ratio} />
                     <div className="col" style={{ height: 'fit-content', width: 'fit-content', alignItems: 'flex-end' }}>
-                        <span className="main-title capitalize" style={{ color: 'var(--red)', fontWeight: '900' }}>{housing.publisher.name}</span>
-                        <span className="main-title" style={{ color: 'var(--red)', fontWeight: '100' }}>@{housing.publisher.username}</span>
+                        <span className="title capitalize" style={{ color: 'var(--main-color)', fontWeight: '900' }}>{housing.publisher.name}</span>
+                        <span className="title uncapitalize" style={{ color: 'var(--main-color)', fontWeight: '100' }}>@{housing.publisher.username}</span>
                     </div>
 
                 </div>
