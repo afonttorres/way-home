@@ -20,7 +20,6 @@ export const Home = () => {
         })
     }
 
-    console.log(housings)
     return (
         <>
             {housings ? <VHome housings={housings} /> : null}

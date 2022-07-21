@@ -18,7 +18,7 @@ export const MainCard = ({ housing }) => {
                 <Category category={housing.category} />
                 <TitleDisplay housing={housing} />
                 <Price housing={housing} />
-                <AnimalDisplay pet={housing.animal} top={'85%'} fontSize={'2rem'} right={'15%'}/>
+                <AnimalDisplay pet={housing.animal} top={'80%'} fontSize={'2rem'} right={'15%'}/>
             </div>
         </article>
     )

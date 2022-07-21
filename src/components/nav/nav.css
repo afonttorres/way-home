@@ -11,7 +11,7 @@
     font-size: var(--font-size);
     font-family: var(--font-family-main);
     width: 85%;
-    margin: 0 calc(15% / 2);
+    padding: 0 calc(15% / 2);
 }
 
 .btnMB {

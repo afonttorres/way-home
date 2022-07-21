@@ -1,35 +1,42 @@
-.xfeed-cont, .yfeed-cont{
+.xfeed-cont,
+.yfeed-cont {
     position: relative;
     top: var(--nav-height);
     gap: 3%;
     height: fit-content;
 }
 
-.feed-title{
+.feed-title {
     margin: 1.5%;
     align-self: flex-start;
     margin-left: 15%;
 }
 
-.xfeed, .yfeed{
+.xfeed,
+.yfeed {
     height: var(--xfeed-height);
     width: 75%;
     margin: 0 auto;
     position: relative;
+    padding: 5% 0;
 }
 
-.xfeed{
-    display:-webkit-box;
-    padding: 0 5% 0 5%;
+.xfeed {
+    display: -webkit-box;
+    padding: 5%;
     gap: 5%;
     overflow-x: scroll;
     overflow-y: hidden;
+    height: 90%;
 }
-.yfeed-cont{
-    top: 12.5%;
+
+
+.yfeed-cont {
+    top: 12%;
+    gap: 5%;
 }
-.yfeed{
-    margin-top: 5%;
+
+.yfeed {
     height: var(--yfeed-height);
     width: 85%;
     gap: 5%;
@@ -38,15 +45,25 @@
     overflow-y: scroll;
 }
 
-.search-feed{
+.search-feed {
     height: 55vh;
     width: 85%;
     position: absolute;
     top: calc(var(--nav-height) + 15vh);
 }
+
 @media (min-width: 820px) {
-    .search-feed{
-        flex-wrap: wrap;
-        width: 70%;
+    .yfeed {
+        flex-flow: wrap;
+        width: 85%;
+        justify-content: flex-start;
+        padding: 1% 0;
+        gap: 5%;
+        padding-left: 10%;
+    }
+
+    .xfeed {
+        padding: 1% 5% 2% 5%;
+        gap: 2%;
     }
 }

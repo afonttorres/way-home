@@ -14,7 +14,7 @@
     gap: 2%;
 }
 
-.detailCard .scroll-bar{
+.scrollBar{
     height: .5rem;
     width: 5rem;
     border-radius: .25rem;
@@ -48,11 +48,20 @@
     height: 60%;
 }
 .specs-cards{
-    justify-content: space-around;
     height: 100%;
     width: 100%;
     overflow-y: scroll;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
+
+.specs-cards::-webkit-scrollbar {
+    display: none;
+  }
+
 .detailCard-desc{
    align-items: flex-start;
 }
@@ -88,15 +97,17 @@
        top: 15vh;
        left: calc((100% - 35%) /2 );
        left: 5vw;
-       width: 35%;
+       width: 40%;
        margin: auto;
        border-radius: var(--main-border-radius);
        box-shadow: var(--shadow);
        bottom: 15vh !important;
        transition: none;
+       padding: 1%;
+       height: 65%;
     }
 
-    .scroll-bar{
+    .scrollBar{
         display: none;
     }
 }

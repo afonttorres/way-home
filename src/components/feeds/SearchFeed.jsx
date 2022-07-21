@@ -3,7 +3,6 @@ import { SmallCard } from '../cards/smallCard/SmallCard';
 
 export const SearchFeed = ({ suggestions, search }) => {
 
-    console.log(suggestions)
     return (
         <div className="search-feed yfeed col">
             {suggestions.length >= 1 ?

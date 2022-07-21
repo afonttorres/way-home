@@ -13,25 +13,30 @@ export const DetailCard = ({ housing, specs }) => {
 
     const [start, setStart] = useState();
 
-    useEffect(()=>{
+    useEffect(() => {
 
-    },[start])
+    }, [start])
 
-    const closeDetail = (e) =>{
+    const closeDetail = (e) => {
         let end = e.changedTouches[0].clientY;
         let card = document.querySelector('.detailCard');
-        if(end) card.classList.toggle('card-bottom');
+        if (end) card.classList.toggle('card-bottom');
     }
 
     return (
-        <article className='detailCard'  onTouchStart={(e)=>setStart(e.changedTouches[0].clientY)} onTouchEnd={closeDetail}>
+        <article className='detailCard' onTouchStart={(e) => setStart(e.changedTouches[0].clientY)} onTouchEnd={closeDetail}>
 
-            <div className="scroll-bar"></div>
+            <div className="scrollBar"></div>
 
             <header className='detailCard-header col'>
                 <div className="row category-cont">
-                    <Category category={housing.category}/>
-                    <Ratio ratio={housing.ratio}/>
+                    <Category category={housing.category} />
+                    <Ratio ratio={housing.ratio} />
+                    <div className="col" style={{ height: 'fit-content', width: 'fit-content', alignItems: 'flex-end' }}>
+                        <span className="main-title capitalize" style={{ color: 'var(--red)', fontWeight: '900' }}>{housing.publisher.name}</span>
+                        <span className="main-title" style={{ color: 'var(--red)', fontWeight: '100' }}>@{housing.publisher.username}</span>
+                    </div>
+
                 </div>
                 <div className="row">
                     <TitleDisplay housing={housing} />
@@ -40,13 +45,13 @@ export const DetailCard = ({ housing, specs }) => {
 
 
             <section className='detailCard-specs col'>
-                <SeeAll title={'facilities'} goTo={'/facilities'}/>
+                <SeeAll title={'facilities'} goTo={'/facilities'} />
                 <div className="specs-cards row">
                     {specs.map((s, key) => (
-                        <Spec key={key} specification={s.spec}/>
+                        <Spec key={key} specification={s.spec} />
                     ))}
                 </div>
-                <AnimalDisplay pet={housing.animal}/>
+                <AnimalDisplay pet={housing.animal} />
             </section>
 
             <section className="detailCard-desc col">
@@ -60,8 +65,8 @@ export const DetailCard = ({ housing, specs }) => {
 
             <footer className='detailCard-footer row'>
                 <div className="price-cont row">
-                    <Price housing={housing}/>
-                    <MainButton text={"Book Now"}/>
+                    <Price housing={housing} />
+                    <MainButton text={"Book Now"} />
                 </div>
             </footer>
         </article>

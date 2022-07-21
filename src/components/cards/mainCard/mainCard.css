@@ -10,7 +10,7 @@
     height: 55%;
     width: 85%;
 }
-.MainCard-img-cont img{
+.MainCard-img-cont > img{
     height: 85%;
     width: 85%;
     margin: auto;
@@ -19,7 +19,7 @@
     transition: all 1s ease;
 }
 
-.MainCard-img-cont img:hover{
+.MainCard-img-cont > img:hover{
     transform: scale(0.98);
     opacity: 75%;
 }

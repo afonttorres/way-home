@@ -18,7 +18,7 @@ export const SmallCard = ({ housing }) => {
                 <Category category={housing.category} />
                 <TitleDisplay housing={housing} />
                 <Price housing={housing} />
-                <AnimalDisplay pet={housing.animal} top={'5%'} fontSize={'2rem'} right={'5%'} />
+                <AnimalDisplay pet={housing.animal} top={'60%'} fontSize={'2rem'} right={'5%'} />
             </div>
         </article>
     )

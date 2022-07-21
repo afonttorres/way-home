@@ -1,21 +1,21 @@
 export const displayUtil = {
     findPetIcon(pet) {
         const icons = [
-            { dog: <i classNameName="fa-solid fa-dog"></i> },
-            { cow: <i classNameName="fa-solid fa-cow"></i> },
-            { hippo: <i classNameName="fa-solid fa-hippo"></i> },
-            { otter: <i classNameName="fa-solid fa-otter"></i> },
-            { cat: <i classNameName="fa-solid fa-cat"></i> },
-            { crow: <i classNameName="fa-solid fa-crow"></i> },
-            { dove: <i classNameName="fa-solid fa-dove"></i> },
-            { fish: <i classNameName="fa-solid fa-fish"></i> },
-            { frog: <i classNameName="fa-solid fa-frog"></i> },
-            { horse: <i classNameName="fa-solid fa-horse"></i> },
-            { kiwi: <i classNameName="fa-solid fa-kiwi-bird"></i> },
-            { mosquito: <i classNameName="fa-solid fa-mosquito"></i> },
-            { shrimp: <i classNameName="fa-solid fa-shrimp"></i> },
-            { spider: <i classNameName="fa-solid fa-spider"></i> },
-            { worm: <i classNameName="fa-solid fa-worm"></i> }
+            { dog: <i className="fa-solid fa-dog"></i> },
+            { cow: <i className="fa-solid fa-cow"></i> },
+            { hippo: <i className="fa-solid fa-hippo"></i> },
+            { otter: <i className="fa-solid fa-otter"></i> },
+            { cat: <i className="fa-solid fa-cat"></i> },
+            { crow: <i className="fa-solid fa-crow"></i> },
+            { dove: <i className="fa-solid fa-dove"></i> },
+            { fish: <i className="fa-solid fa-fish"></i> },
+            { frog: <i className="fa-solid fa-frog"></i> },
+            { horse: <i className="fa-solid fa-horse"></i> },
+            { kiwi: <i className="fa-solid fa-kiwi-bird"></i> },
+            { mosquito: <i className="fa-solid fa-mosquito"></i> },
+            { shrimp: <i className="fa-solid fa-shrimp"></i> },
+            { spider: <i className="fa-solid fa-spider"></i> },
+            { worm: <i className="fa-solid fa-worm"></i> }
         ]
 
         const icon = icons.filter((obj, key) => Object.keys(obj) == pet)[0];

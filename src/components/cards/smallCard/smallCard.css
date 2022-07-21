@@ -4,14 +4,15 @@
     box-shadow: var(--shadow);
     border-radius: var(--main-border-radius);
     position: relative;
+    padding: 2%;
 }
 .smallCard-img-cont{
     height: 85%;
     width: 85%;
 }
 .smallCard-img-cont img{
-    height: 95%;
-    width: 70%;
+    height: 90px;
+    width: 90px;
     margin: auto;
     border-radius: var(--main-border-radius);
 }
@@ -22,4 +23,10 @@
     gap: 5%;
     height: 90%;
     margin: auto;
+}
+
+@media (min-width: 820px) {
+    .smallCard-cont {
+        padding: 1%;
+    }
 }
