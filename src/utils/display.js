@@ -1,6 +1,5 @@
 export const displayUtil = {
     findPetIcon(pet) {
-        console.log(pet)
         const icons = [
             { dog: <i className="fa-solid fa-dog"></i> },
             { cow: <i className="fa-solid fa-cow"></i> },
