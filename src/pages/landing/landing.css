@@ -1,0 +1,22 @@
+*{
+    background-color: var( --main-color-opacity);
+}
+.houseG{
+    height:30vh;
+    width: 30vh;
+    justify-content: center;
+    position: inherit;
+    align-items: center;
+    display: flex;
+    margin-top: 30vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.tittle-lang{
+    font-size: var(----font-family-title);
+    color: var(--white-bg);
+    align-items: center;
+    
+}

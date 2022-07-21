@@ -10,9 +10,21 @@
     box-shadow: none;
     border: none;
     cursor: pointer;
+    
+    
 }
 
 .landing-button{
-    background-color: var(--white-bg);
+    background-color: var( --white-bg);
     color: var(--main-color-btn);
+    border-color: var(--title-color);
+    height: 10vh;
+     width: 40vh;
+     cursor: pointer;
+     margin-top: 90vh;
+     position: absolute;
+
+  
+  
+  
 }
