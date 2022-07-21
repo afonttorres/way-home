@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { Nav } from "../../components/nav/Nav";
 import { VHome } from "../../views/VHome/VHome";
 import { Footer } from '../../components/footer/Footer';
 import { housingService } from "../../services/housingService";
+import { specsService } from "../../services/specsService";
+
 
 export const Home = () => {
 

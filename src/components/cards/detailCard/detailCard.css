@@ -93,6 +93,7 @@
        border-radius: var(--main-border-radius);
        box-shadow: var(--shadow);
        bottom: 15vh !important;
+       transition: none;
     }
 
     .scroll-bar{

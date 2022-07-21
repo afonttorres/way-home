@@ -1,21 +1,21 @@
 import axios from 'axios';
-const baseUrl = `https://62d7c5d249c87ff2af3c821c.mockapi.io`;
+const baseUrl = `http://localhost:8080`;
 
 export const housingService = {
     getAllHousings() {
-        const housings = axios.get(`${baseUrl}/housing`).then(res => {
+        const housings = axios.get(`${baseUrl}/housings`).then(res => {
             return res.data;
         })
         return housings;
     },
     getSingleHousing(id){
-        const housing = axios.get(`${baseUrl}/housing/${id}`).then(res =>{
+        const housing = axios.get(`${baseUrl}/housings/${id}`).then(res =>{
             return res.data;
         })
         return housing;
     },
     getSearch(search){
-        const suggestions = axios.get(`${baseUrl}/housing`).then(res =>{
+        const suggestions = axios.get(`${baseUrl}/housings?search=${search}`).then(res =>{
             return res.data;
         })
         return suggestions;

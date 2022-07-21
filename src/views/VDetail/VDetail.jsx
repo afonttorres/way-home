@@ -4,7 +4,7 @@ import { Nav } from "../../components/nav/Nav";
 import { DotSlider } from "../../components/reusables/DotSlider/DotSlider";
 import '../VDetail/vdetail.css';
 
-export const VDetail = ({ housing }) => {
+export const VDetail = ({ housing, specs }) => {
 
     const [start, setStart] = useState();
     const [img, setImg] = useState();
@@ -65,7 +65,7 @@ export const VDetail = ({ housing }) => {
             <section onTouchStart={(e) => setStart(e.changedTouches[0].clientX)} onTouchEnd={slideImg} className="wrapper" style={{ backgroundImage: `url(${img})` }}>
                 <Nav />
                 <div className="dotSlider-pos"><DotSlider imgs={imgs} current={current} slide={slideOnClick}/></div>
-                <DetailCard housing={housing} />
+                <DetailCard housing={housing} specs={specs}/>
             </section>
         </div>
     );

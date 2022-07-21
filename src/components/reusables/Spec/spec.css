@@ -9,4 +9,5 @@
 .spec-text{
     color: var(--title-color);
     font-weight: bolder;
+    text-align: center;
 }

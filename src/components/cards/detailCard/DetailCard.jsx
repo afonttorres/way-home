@@ -9,7 +9,7 @@ import { TitleDisplay } from '../../reusables/TitleDisplay/TitleDisplay';
 import { SeeAll } from '../../reusables/SeeAll/SeeAll';
 import { AnimalDisplay } from '../../reusables/AnimalDisplay/AnimalDisplay';
 
-export const DetailCard = ({ housing }) => {
+export const DetailCard = ({ housing, specs }) => {
 
     const [start, setStart] = useState();
 
@@ -42,8 +42,8 @@ export const DetailCard = ({ housing }) => {
             <section className='detailCard-specs col'>
                 <SeeAll title={'facilities'} goTo={'/facilities'}/>
                 <div className="specs-cards row">
-                    {housing.specs.map((s, key) => (
-                        <Spec key={key} specification={s}/>
+                    {specs.map((s, key) => (
+                        <Spec key={key} specification={s.spec}/>
                     ))}
                 </div>
                 <AnimalDisplay pet={housing.animal}/>
