@@ -6,7 +6,7 @@ export const YFeed = ({ housings }) => {
     return (
         <div className="yfeed-cont col">
 
-            <SeeAll title={'most popular'} goTo={'/most-popular'} width={'75%'} />
+            <SeeAll title={'Nearby to you'} goTo={'nearby'} width={'75%'} />
             <div className='yfeed col'>
                 {housings.map((housing, key) =>
                     <>{key < 10 ? <SmallCard key={housing.id} housing={housing} /> : null}</>
