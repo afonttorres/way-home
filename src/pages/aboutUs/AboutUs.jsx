@@ -13,9 +13,9 @@ export const AboutUs = () => {
 
     return (
         <div className=" aboutUs-wrapper col">
-            {comments.map((comment, key) => (
+            {/* {comments.map((comment, key) => (
                 <SocialProof key={key} comment={comment} />
-            ))}
+            ))} */}
         </div>
     )
 }

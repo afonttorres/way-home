@@ -13,6 +13,12 @@ export const housingService = {
             return res.data;
         })
         return housing;
+    },
+    getSearch(search){
+        const suggestions = axios.get(`${baseUrl}/housing`).then(res =>{
+            return res.data;
+        })
+        return housing;
     }
 
 }

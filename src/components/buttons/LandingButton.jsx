@@ -7,4 +7,3 @@ export const LandingButton = () => {
         <button className="landing-button"><Link to='/home'>Get Started</Link></button>
     )
 }
-
