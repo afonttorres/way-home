@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { App } from '../App';
-import { MainButton } from '../components/buttons/MainButton';
 import { Detail } from '../pages/detail/Detail';
 import { Home } from '../pages/home/Home';
 import { Search } from '../pages/search/Search';
@@ -17,7 +16,6 @@ export default function Router() {
                 <Route path='/upload' element={<Upload />}></Route>
                 <Route path='/search' element={<Search />}></Route>
                 <Route path='/detail/:id' element={<Detail />}></Route>
-                <Route path='/buttons' element={<MainButton />}></Route>
             </Routes>
         </BrowserRouter>
     )
