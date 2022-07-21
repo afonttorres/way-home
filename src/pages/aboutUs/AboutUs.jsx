@@ -6,7 +6,7 @@ export const AboutUs = () => {
 
     const comments = [
         { comment: "Mi perro y yo hemos encontrado casa y somos", user: 'John Doe' },
-        { comment: "Mi gato y yo hemos encontrado casa y somos", user: 'John Doe' },
+        { comment: "Siempre quise tener una mascota. Ahora  puedo, y he ganado un extra: una compi de piso maravillosa.", user: 'Marina' },
         { comment: "Mi conejo y yo hemos encontrado casa y somos", user: 'John Doe' },
     ]
 
