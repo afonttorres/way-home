@@ -1,5 +1,10 @@
-*{
+.landing-wrapper {
     background-color: var( --main-color-opacity);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-evenly;
 }
 .houseG{
     height:30vh;
@@ -14,9 +19,6 @@
     
 }
 
-.tittle-lang{
-    font-size: var(----font-family-title);
+.landing-title, .landing-subtitle{
     color: var(--white-bg);
-    align-items: center;
-    
 }

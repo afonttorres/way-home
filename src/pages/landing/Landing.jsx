@@ -6,18 +6,18 @@ export const Landing = () => {
 
 
     return (
-        <div className="landing-wrapper col">
-            <LandingButton />
-            {/* boton para ir a about us */}
-        
-             <div className="houseG">
-                 <img src={houseG} alt="houseG" />
+        <div className="landing-wrapper col" style={{ backgroundImage: `url(${houseG})` }}>
+            <div className="col" style={{
+                height: '50%',
+                gap: '5%'
+            }}>
+                <h2 className="main-title landing-title">Find your Perfect Place</h2>
+                <p className="title landing-subtitle">you and your pets</p>
             </div>
-
-            <h2 className="tittle-lang">Find your Perfect Place</h2>
-            <p>you and your pets</p>
+            <div className="col" style={{ height: 'fit-content' }}><LandingButton /></div>
+            {/* boton para ir a about us */}
         </div>
-        
+
 
 
     )
