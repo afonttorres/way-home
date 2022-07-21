@@ -15,11 +15,7 @@ export const Landing = () => {
                 <p className="title landing-subtitle">Encuentra un hogar para ti y para los tuyos</p>
             </div>
             <div className="col" style={{ height: 'fit-content' }}><LandingButton /></div>
-            {/* boton para ir a about us */}
         </div>
-
-
-
     )
 }
 
