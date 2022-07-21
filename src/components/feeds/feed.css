@@ -52,6 +52,15 @@
     top: calc(var(--nav-height) + 15vh);
 }
 
+.match-feed{
+    top: calc( var(--nav-height) + 2vh);
+    justify-content: flex-start;
+    border: 1px solid;
+    height: 60vh;
+    position: relative;
+    height: calc(90vh - var(--nav-height) - 3vh);
+}
+
 @media (min-width: 820px) {
     .yfeed {
         flex-flow: wrap;

@@ -19,7 +19,6 @@
     
 }
 
-
 .landing-title, .landing-subtitle{
     color: var(--white-bg);
     text-align: center;
@@ -33,5 +32,3 @@
     width: 65%;
     font-size: 1.5rem;
 }
-
-
