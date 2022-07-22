@@ -41,15 +41,15 @@
   --spec-height: 5em;
   --spec-width: 5em;
 
-  --main-card-heightMB: 20rem;
+  --main-card-heightMB: 22rem;
   --main-card-widthMB: 15rem;
   /* --main-card-heightDT: 25rem;
   --main-card-widthDT: 20rem; */
 
   --small-card-heightMB: 10rem;
   --small-card-widthMB: 25rem;
-  /* --small-card-heightDT: 10rem;
-  --small-card-widthDT: 10rem; */
+  --small-card-heightDT: 8rem;
+  /* --small-card-widthDT: 10rem; */
 
   --detail-card-height: 60vh;
 

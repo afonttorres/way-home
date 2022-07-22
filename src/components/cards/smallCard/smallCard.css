@@ -29,5 +29,6 @@
 @media (min-width: 820px) {
     .smallCard-cont {
         padding: 1%;
+        height: var(--small-card-heightDT);
     }
 }
