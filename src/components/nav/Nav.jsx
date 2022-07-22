@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/wayhome-logo.png';
 import '../nav/nav.css';
 export const Nav = () => {
 
@@ -14,6 +15,7 @@ export const Nav = () => {
                 <Link to='/saved'><i className="fa-solid fa-bookmark"></i></Link>
             </span>
             <div className="nav-contentDT row">
+                <img className='nav-logo' src={logo} alt="Logo" />
                 {location.includes('home') ? null : <span className="nav-itemDT"><Link to='/home'>Home</Link></span>}
                 {location.includes('search') ? null : <span className="nav-itemDT"><Link to='/search'>Search</Link></span>}
                 {location.includes('matches') ? null : <span className="nav-itemDT"><Link to='/matches'>Matches</Link></span>}

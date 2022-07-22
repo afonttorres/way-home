@@ -5,6 +5,7 @@
     border-radius: var(--main-border-radius);
     position: relative;
     padding: 2%;
+    cursor: pointer;
 }
 .smallCard-img-cont{
     height: 85%;

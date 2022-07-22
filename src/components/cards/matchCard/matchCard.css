@@ -6,10 +6,6 @@
     position: relative;
 }
 
-.matchCard-cont>* {
-    /* border: 1px solid black; */
-}
-
 .matchCard-img-cont,
 .matchCard-info-cont {
     width: 40%;

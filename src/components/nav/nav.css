@@ -34,6 +34,10 @@
     display: none;
 }
 
+.nav-logo {
+    display: none;
+}
+
 @media (min-width: 820px) {
     #nav {
         background-color: var(--main-bg);
@@ -62,5 +66,13 @@
 
     .nav-itemDT:hover {
         color: var(--main-color);
+    }
+
+    .nav-logo {
+        display: block;
+        height: 140px;
+        position: absolute;
+        left: 5%;
+        top: -35%;
     }
 }
