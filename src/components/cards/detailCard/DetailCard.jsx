@@ -9,7 +9,7 @@ import { TitleDisplay } from '../../reusables/TitleDisplay/TitleDisplay';
 import { SeeAll } from '../../reusables/SeeAll/SeeAll';
 import { AnimalDisplay } from '../../reusables/AnimalDisplay/AnimalDisplay';
 
-export const DetailCard = ({ housing, specs }) => {
+export const DetailCard = ({ housing, specs, match }) => {
 
     const [start, setStart] = useState();
 
@@ -66,7 +66,7 @@ export const DetailCard = ({ housing, specs }) => {
             <footer className='detailCard-footer row'>
                 <div className="price-cont row">
                     <Price housing={housing} />
-                    <MainButton text={"Book Now"} />
+                    <MainButton text={"Book Now"} match={match} housing={housing} />
                 </div>
             </footer>
         </article>

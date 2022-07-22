@@ -13,5 +13,11 @@ export const matchService = {
             return res.data;
         })
         return matches;
+    },
+    postMatch(req){
+        const match = axios.post(`${baseUrl}/matches`, req).then(res =>{
+            return res.data;
+        })
+        return match;
     }
 }

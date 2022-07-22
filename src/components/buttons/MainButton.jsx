@@ -1,6 +1,7 @@
 import '../buttons/button.css';
-export const MainButton = ({text}) =>{
+export const MainButton = ({text, match, housing}) =>{
+
     return(
-        <button className="main-button">{text}</button>
+        <button onClick={()=>match(housing.id)} className="main-button">{text}</button>
     )
 }

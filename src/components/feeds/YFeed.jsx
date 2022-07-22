@@ -9,7 +9,7 @@ export const YFeed = ({ housings }) => {
             <SeeAll title={'Nearby to you'} goTo={'nearby'} width={'75%'} />
             <div className='yfeed col'>
                 {housings.map((housing, key) =>
-                    <>{housing.active ? <SmallCard key={housing.id} housing={housing} /> : null}</>
+                    <>{housing.active ? <SmallCard key={key} housing={housing} /> : null}</>
                 )}
             </div>
         </div>
