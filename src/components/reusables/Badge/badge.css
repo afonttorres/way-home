@@ -14,4 +14,6 @@
     box-shadow: none;
     border: none;
     font-size: var(--detail-font-size);
+    font-family: var(--font-family-main);
+    padding: 0% 5%;
 }

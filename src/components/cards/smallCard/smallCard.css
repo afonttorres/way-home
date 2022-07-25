@@ -17,6 +17,12 @@
     margin: auto;
     border-radius: var(--main-border-radius);
     object-fit: cover;
+    transition: all 1s ease;
+}
+
+.smallCard-img-cont > img:hover{
+    transform: scale(0.98);
+    opacity: 75%;
 }
 
 .smallCard-info-cont{

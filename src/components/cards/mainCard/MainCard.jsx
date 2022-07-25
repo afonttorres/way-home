@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { Category } from '../../reusables/Category/Category';
+import { Badge } from '../../reusables/Badge/Badge';
 import { Price } from '../../reusables/Price/Price';
 import { TitleDisplay } from '../../reusables/TitleDisplay/TitleDisplay';
 import { AnimalDisplay } from '../../reusables/AnimalDisplay/AnimalDisplay';
@@ -15,7 +15,7 @@ export const MainCard = ({ housing }) => {
 
             </div>
             <div className='MainCard-info-cont col'>
-                <Category category={housing.category} />
+                <Badge text={housing.category} />
                 <TitleDisplay housing={housing} />
                 <Price housing={housing} />
                 <AnimalDisplay pet={housing.animal} top={'80%'} fontSize={'2rem'} right={'15%'}/>

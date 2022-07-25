@@ -1,6 +1,6 @@
 import '../detailCard/detailCard.css';
 import { MainButton } from '../../buttons/MainButton';
-import { Category } from '../../reusables/Category/Category';
+import { Badge } from '../../reusables/Badge/Badge';
 import { Price } from '../../reusables/Price/Price';
 import { Spec } from '../../reusables/Spec/Spec';
 import { Ratio } from '../../reusables/Ratio/Ratio';
@@ -30,7 +30,7 @@ export const DetailCard = ({ housing, specs, match }) => {
 
             <header className='detailCard-header col'>
                 <div className="row category-cont">
-                    <Category category={housing.category} />
+                    <Badge text={housing.category} />
                     <Ratio ratio={housing.ratio} />
                     <div className="col" style={{ height: 'fit-content', width: 'fit-content', alignItems: 'flex-end' }}>
                         <span className="title capitalize" style={{ color: 'var(--main-color)', fontWeight: '900' }}>{housing.publisher.name}</span>

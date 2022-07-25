@@ -3,6 +3,8 @@ import { TitleDisplay } from '../../reusables/TitleDisplay/TitleDisplay';
 import { Price } from '../../reusables/Price/Price';
 import { AnimalDisplay } from '../../reusables/AnimalDisplay/AnimalDisplay';
 import { Avatar } from '../../reusables/Avatar/Avatar';
+import { Badge } from '../../reusables/Badge/Badge';
+import { ChatButton } from '../../buttons/ChatButton';
 
 export const MatchCard = ({ match }) => {
     return (
@@ -19,8 +21,10 @@ export const MatchCard = ({ match }) => {
                             <span className="title uncapitalize" style={{ color: 'var(--red)', fontWeight: '100' }}>{match.housing.publisher.email}</span>
                             <span className='detail-text'>Publicado:<br /> 7 Junio 2022</span>
                         </div>
-                        <div className="col">
-                            <Avatar url={match.housing.publisher.avatarUrl} top={'-10%'} />
+                        <div className="col" style={{gap: '10%'}}>
+                            <Avatar url={match.housing.publisher.avatarUrl} />
+                            <Badge text={'pending'}/>
+                            <ChatButton status={'pending'}/>
                         </div>
                     </div>
                 </div>

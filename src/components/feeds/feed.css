@@ -4,6 +4,7 @@
     top: var(--nav-height);
     gap: 3%;
     height: fit-content;
+    margin-top: 1%;
 }
 
 .feed-title {

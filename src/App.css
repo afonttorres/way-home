@@ -1,23 +1,27 @@
 :root {
   /* FONTS */
   --font-family-title: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  --font-family-main: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-family-main: 'Source Sans Pro', sans-serif;
   --title-font-size: large;
   --main-font-size: medium;
-  --detail-font-size: 1.15rem;
+  --detail-font-size: medium;
 
   /* COLORS */
   --title-color: black;
   --main-color: rgba(11, 201, 209, 1);
   --main-color-opacity: rgba(80, 163, 169, 50%);
   --main-color-btn: rgba(80, 163, 169, 1);
-  --red: rgba(251, 115, 115, 1);
-  --red-opacity: rgba(241, 232, 235, 1);
   --main-bg: white;
   --contrast-bg: rgb(237, 253, 254);
   --white-bg: white;
   --blue: rgb(61, 100, 167);
   --blue-opacity: rgba(42, 107, 219, .4);
+  --red: rgba(251, 115, 115, 1);
+  --red-opacity: rgba(251, 115, 115, .4);
+  --yellow: rgba(238, 184, 16);
+  --yellow-opacity: rgba(238, 184, 16, .4);
+  --green: rgba(11, 156, 49);
+  --green-opacity: rgba(11, 156, 49, .4);
   --detail-color: rgba(204, 199, 199, 1);
 
 
@@ -83,6 +87,7 @@ a {
 
 p {
   margin: 0;
+  font-weight: 100;
 }
 
 .view {
@@ -134,7 +139,8 @@ p {
 .detail-text {
   font-size: var(--detail-font-size);
   color: var(--detail-color);
-  font-family: var(--font-family-title);
+  font-family: var(--font-family-main);
+  font-weight: 300;
 }
 
 .main-title::first-letter,

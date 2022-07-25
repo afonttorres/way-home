@@ -58,7 +58,7 @@
     padding-bottom: 5%;
 }
 
-.specs-cards::-webkit-scrollbar {
+.specs-cards::-webkit-scrollbar, .desc-content::-webkit-scrollbar {
     display: none;
   }
 

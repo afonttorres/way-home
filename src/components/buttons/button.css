@@ -1,4 +1,4 @@
-.main-button, .landing-button{
+.main-button, .landing-button, .chat-button{
     height: var(--btn-height);
     width: var(--btn-width);
     border-radius: var(--small-border-radius);
@@ -9,9 +9,6 @@
     outline: none;
     box-shadow: none;
     border: none;
-    cursor: pointer;
-    
-    
 }
 
 .landing-button{
@@ -23,3 +20,22 @@
     cursor: pointer;
     position: absolute;
 }
+
+.chat-button{
+    display: block;
+    width: fit-content;
+    padding: 10% 10%;
+    background-color: var(--main-bg);
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    line-height: 100%;
+    border-radius: 0.25rem;
+}
+
+
+.landing-button:hover, .landing-button:focus, .chat-button:hover, .chat-button:focus{
+    background-color: var(--main-color-opacity);
+    border: 1px solid var(--mina-color-opacity);
+    color: white;
+}
+

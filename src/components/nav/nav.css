@@ -43,6 +43,7 @@
         background-color: var(--main-bg);
         justify-content: flex-end;
         width: 100%;
+        box-shadow: var(--shadow);
     }
 
     .btnMB {

@@ -1,6 +1,6 @@
 import '../smallCard/smallCard.css';
 import { useNavigate } from 'react-router-dom';
-import { Category } from '../../reusables/Category/Category';
+import { Badge } from '../../reusables/Badge/Badge';
 import { TitleDisplay } from '../../reusables/TitleDisplay/TitleDisplay';
 import { Price } from '../../reusables/Price/Price';
 import { AnimalDisplay } from '../../reusables/AnimalDisplay/AnimalDisplay';
@@ -15,7 +15,7 @@ export const SmallCard = ({ housing }) => {
                 <img src={housing.imgUrl1} alt="" />
             </div>
             <div className="smallCard-info-cont col">
-                <Category category={housing.category} />
+                <Badge text={housing.category} />
                 <TitleDisplay housing={housing} />
                 <Price housing={housing} />
                 <AnimalDisplay pet={housing.animal} top={'60%'} fontSize={'2rem'} right={'5%'} />
