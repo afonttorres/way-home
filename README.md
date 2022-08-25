@@ -1,5 +1,5 @@
 
-# Way Home App
+# Way Home App 🦔
 React App developed for the 2022 F5 Hackathon organized by Factoria F5 and Thoughtworks. 
 
 This app was developed given a basic functional requirements designed by the Hackaton organization. It follows a MarketPlace structure where a potential Client uploads an Announcement and the User interacts with it and decides whether to contact (make a match) the Client or not.
