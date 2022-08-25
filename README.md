@@ -43,7 +43,7 @@ Given the conditions of the Hackaton (was a 48 hours hackaton) this project turn
 
 ### Match CRUD
 + Create a match between the user and the announcement (and therefore the publisher)
-+ Display all users match and their status
++ Display all users matches and their status
 
 
 ### Design
