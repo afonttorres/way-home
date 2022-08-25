@@ -23,8 +23,8 @@ export const MatchCard = ({ match }) => {
                         </div>
                         <div className="col" style={{gap: '10%'}}>
                             <Avatar url={match.housing.publisher.avatarUrl} />
-                            <Badge text={'pending'}/>
-                            <ChatButton status={'pending'}/>
+                            <Badge text={'completed'}/>
+                            <ChatButton status={'completed'}/>
                         </div>
                     </div>
                 </div>

@@ -1,70 +1,100 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Way Home App
+React App developed for the 2022 F5 Hackathon organized by Factoria F5 and Thoughtworks. 
 
-## Available Scripts
+This app was developed given a basic functional requirements designed by the Hackaton organization. It follows a MarketPlace structure where a potential Client uploads an Announcement and the User interacts with it and decides whether to contact (make a match) the Client or not.
 
-In the project directory, you can run:
+Taking all the specifications required we decided to develop a real estate portal focused in those who are in research of a pet-friendly housing.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
++ HTML 5
++ CSS 3
++ REACT
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Rest API
++ [Way Home API](https://github.com/afonttorres/way-homeAPI)
 
-### `npm test`
+### Version control
++ GIT
++ Git Hub
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Development tools & libraries
++ Visual Studio Code
++ Postman
++ Axios
 
-### `npm run build`
+## Objectives
+This project was build around the Announcement, the main entitiy of the application and corresponds to the Housing which must contain a Publisher (Client) and the specifiactions that may take Users attention as well as housing images' and the pets who live there. The aim is to put in contact pet-friendly landlords with those pet-owners who are looking for a housing.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The functional requirements of this project were divided by sprints which were developed by importance using Agile Methodologies as Kanban and Scrum.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Being the main entity of the project our first sprint consited in display all available housings and its details. Once we got satisfied with the work done we moved to the next sprint whereby we added a searcher so user could filter its preferences. Finally, we gave the user the capability to make a match with the announcement (Housing) and therefore with the owner (Client). 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Given the conditions of the Hackaton (was a 48 hours hackaton) this project turns out to be unfinished but we are looking forward to add new features and end those which are not finished yet. 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Features
+### Housing CRUD
++ Display all housings
++ Display the detail of a single housing
++ Search housings by location, description, title or pet
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Match CRUD
++ Create a match between the user and the announcement (and therefore the publisher)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Design
++ Responsive Web Design
++ Modularity and Scalability (by using React components)
 
-## Learn More
+## Preview
+#### Desktop
+![App Screenshot](./assets/desk/landing.png)
+![App Screenshot](./assets/desk/home.png)
+![App Screenshot](./assets/desk/detail.png)
+![App Screenshot](./assets/desk/searcher-cat.png)
+![App Screenshot](./assets/desk/completed-match.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Mobile
+![App Screenshot](./assets/mobile/landing.png)
+![App Screenshot](./assets/mobile/home.png)
+![App Screenshot](./assets/mobile/detail-opened.png)
+![App Screenshot](./assets/mobile/detail-closed.png)
+![App Screenshot](./assets/mobile/match.png)
+![App Screenshot](./assets/mobile/searcher.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Next
+We'd like to add a register and login form for both users and clients so they can be part of the database and authenticate themselves in the application to improve their user experience since we planned our application to be a save place for everyone. Therefore only authenticated users can concact (make match with the announcement) the housing publisher.
 
-### Code Splitting
+Taking this into account, we planned to add a messenger service so publishers can enable a chat with those tenants who are interested in their housings only if they agree with the user profile. They would enable the chat by accepting the match, otherwise the match status would remain pending.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Since our searcher is very inespecific we'd like to modify it and add filters so the search can be more accurated.
 
-### Analyzing the Bundle Size
+Lastly, as its the main point of the application, we'll add a form to upload announcements and update them as well as delete them when the match is completed or publisher desires to erase his housing from the database.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+We expect many more features will come on the go.
 
-### Making a Progressive Web App
+## Authors
++ [Laia Añó](mailto:laiaafernandez18@gmail.com)
++ [Laura Wynter](https://github.com/Laurawynter)
++ [Christina Paucar](https://github.com/Christyg24)
++ [Marielle Ibias](https://github.com/marielleia)
++ [Susana Martínez](https://github.com/Susipro)
++ [Raquel Gil](https://github.com/Rgildeprado)
++ [Agnès Font](https://github.com/afonttorres)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Installation
 
-### Advanced Configuration
+This project was bootstrapped with Create React App therefore requires node.js and npm.  Once you've verified node is installed in your directory take the following steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### 1. Clone the repository
+```bash
+ https://github.com/afonttorres/moments.git
+```
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### 2. Run the app in development mode
+```bash
+ npm start
+ ``` 
