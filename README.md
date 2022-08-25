@@ -10,6 +10,7 @@ Taking all the specifications required into account we decided to develop a real
 ## Tech Stack
 + HTML 5
 + CSS 3
++ ES6
 + REACT
 
 ### Rest API
